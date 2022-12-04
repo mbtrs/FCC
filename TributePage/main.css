@@ -1,0 +1,31 @@
+html {
+      background-color: rgba(147, 143, 148, 0.4);
+}
+#main {
+
+}
+
+#title {
+    text-align: center;
+    color: rgb(52, 181, 255);
+}
+
+#img-div {
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#img-caption {
+  text-align: center
+}
+
+#tribute-info {
+}
+
+#tribute-link {
+}

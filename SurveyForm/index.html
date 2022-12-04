@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+
+<body>
+  <h1 id="title">
+    General Demographics Questionnaire
+  </h1>
+  
+  <p id="description">
+    Please fill out this questionnaire to help us understand our audience better.
+  </p>
+  
+  <form id="survey-form">
+    <div class="padding-form">
+      <label for="name" id="name-label"><strong>Your name:</strong></label>
+      <input type="text" id="name" placeholder="John Doe" style="width: 100px;" required>
+      <span class="validity"></span><br>
+      <br>
+      <label for="email" id="email-label"><strong>Your e-mail:</strong></label>
+      <input type="email" id="email" pattern="[/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/]" placeholder="email@domain.com" style="width: 175px;" required>
+      <span class="validity"></span><br> <!-- email validation needs work -->
+      <br>
+      <label for="tel" id="tel-label"><strong>Your phone number:</strong></label>
+      <input type="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" style="width: 80px;" required>
+      <span class="validity"></span><br>
+      <br>
+      <label for="number" id="number-label"><strong>Number of days stayed:</strong></label>
+      <input type="number" id="number" placeholder="0" style="width: 35px;" min="1" max="1000" required>
+      <span class="validity"></span><br>
+    </div>
+  
+    <p>
+      How did you find out about this user survey?
+    </p>
+    <i>(Please check all that apply.)</i>
+  
+    <ul><input type="checkbox" name="How You Heard About Survey" value="WWW Page"> Followed a text link from another web page
+      <br><input type="checkbox" name="How You Heard About Survey" value="Banner"> Followed a graphical banner/icon from another web page
+      <br><input type="checkbox" name="How You Heard About Survey" value="Search Engine"> Found survey using a search engine
+      <br><input type="checkbox" name="How You Heard About Survey" value="Usenet News"> Saw postings to survery from related newsgroups
+      <br><input type="checkbox" name="How You Heard About Survey" value="Mailing List"> Received email from our mailing list
+      <br><input type="checkbox" name="How You Heard About Survey" value="Friend"> Was told URL by friend
+      <br><input type="checkbox" name="How You Heard About Survey" value="Printed Media"> Read about it in a newspaper/magazine
+      <br><input type="checkbox" name="How You Heard About Survey" value="Remebered"> Remembered to participate from last survey
+      <br><input type="checkbox" name="How You Heard About Survey" value="Others"> Other sources</ul>
+    <p>
+      How comfortable do you feel using computers, in general?
+    </p>
+    <select name="cars" id="dropdown">
+      <option value="Very comfortable">Very comfortable</option>
+      <option value="Somewhat comfortable">Somewhat comfortable</option>
+      <option value="Neither comfortable nor uncomfortable">Neither comfortable nor uncomfortable</option>
+      <option value="Somewhat uncomfortable">Somewhat uncomfortable</option>
+      <option value="Very uncomfortable">Very uncomfortable</option>
+    </select>
+    <br>
+  
+    <p>
+      How comfortable do you feel using the Internet?
+    </p>
+    <ul><input type="radio" name="Comfort With the Internet" value="Very Comfortable"> Very comfortable
+      <br><input type="radio" name="Comfort With the Internet" value="Somewhat Comfortable"> Somewhat comfortable
+      <br><input type="radio" name="Comfort With the Internet" value="Neither"> Neither comfortable nor uncomfortable
+      <br><input type="radio" name="Comfort With the Internet" value="Somewhat Uncomfortable"> Somewhat uncomfortable
+      <br><input type="radio" name="Comfort With the Internet" value="Very Uncomfortable"> Very uncomfortable
+    </ul>
+  
+    <textarea rows="4" cols="50"></textarea><br>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+</body>
+</html>
